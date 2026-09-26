@@ -1,0 +1,45 @@
+# View all existing branches (the asterisk * shows your current branch)
+git branch
+
+# Create a new branch
+git branch feature/user-profile
+
+# Switch to the new branch
+git switch feature/user-profile
+# (Alternative traditional command: git checkout feature/user-profile)
+
+# Shorthand: Create AND switch to a new branch in a single command
+git switch -c feature/login-page
+
+# 1. Ensure you are on the main branch and up to date
+git switch main
+git pull origin main
+
+# 2. Create and switch to your feature branch
+git switch -c feature/shopping-cart
+
+# 3. Make changes to your files (e.g., create cart.js), then stage and commit them
+git add cart.js
+git commit -m "feat: implement shopping cart logic and item counter"
+
+# 4. Push your feature branch to the remote repository (e.g., GitHub)
+git push -u origin feature/shopping-cart
+
+# 5. (After code review / Pull Request is approved) Switch back to main to merge
+git switch main
+git pull origin main
+
+# 6. Merge the feature branch into main
+git merge feature/shopping-cart
+
+# 7. Push the updated main branch to remote
+git push origin main
+
+# Delete a local branch safely (Git prevents deletion if changes aren't merged)
+git branch -d feature/shopping-cart
+
+# Force delete a local branch (discards unmerged changes - use with caution)
+git branch -D feature/experimental-feature
+
+# Delete a remote branch on GitHub/GitLab
+git push origin --delete feature/shopping-cart
