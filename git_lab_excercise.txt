@@ -1,0 +1,11 @@
+Git is a distributed version control system (VCS) created by Linus Torvalds in 2005 to manage source code during software development. It tracks changes in files, allowing developers to collaborate, revert to previous states, and maintain independent streams of development through branches.
+Core Characteristics
+•	Distributed Architecture: Unlike centralized version control systems (like SVN), every developer's local machine stores a complete copy of the project's entire repository and history.
+•	Non-Linear Development (Branching): Git allows rapid creation and merging of lightweight branches, enabling parallel feature development without affecting the main code line.
+•	Data Integrity: Git tracks changes using cryptographic hash functions (SHA-1/SHA-256). Content is stored as immutable objects, ensuring history cannot be altered without detection.
+The Three States of Files
+Git tracks files across three primary areas on your local machine:
+1.	Working Directory: The actual files you edit on your filesystem.
+2.	Staging Area (Index): A preview area holding changes marked to go into the next save point.
+3.	Repository (.git directory): The permanent local database where Git saves snapshots (commits).
+
