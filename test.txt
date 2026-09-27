@@ -1,3 +1,4 @@
+Hi what are you doing
 # View all existing branches (the asterisk * shows your current branch)
 git branch
 
